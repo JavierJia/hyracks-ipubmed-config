@@ -36,11 +36,11 @@ function cleanup {
   io_dirs=$(echo $IO_DIRS | tr "," "\n")
   for io_dir in $io_dirs
   do
-    rm -f $io_dir/*
+    rm -rf $io_dir/*
   done
 
   #Clean up NC temp dir
-  rm -f $NCTMP_DIR/*
+  rm -rf $NCTMP_DIR/*
 
 }
 
